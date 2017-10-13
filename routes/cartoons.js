@@ -30,7 +30,7 @@ router.post("/", function(request, response, next) {
 // Create the route for updating
 router.put("/:id", function(request, response, next) {
   queries.update(request.params.id, request.body).then(function(u) {
-    response.json(u);
+    response.json('updated');
   });
 });
 

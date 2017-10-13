@@ -19,6 +19,7 @@ app.use(cookieParser());
 
 app.use('/', index);
 app.use('/api/cartoons', cartoons);
+// app.use('/cartoons', cartoons);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
